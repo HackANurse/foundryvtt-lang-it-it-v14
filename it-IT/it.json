@@ -1,6 +1,7 @@
 {
 "Activate": "Attiva",
 "all": "tutto",
+"Anchor": "Ancora",
 "Angle": "Angolo",
 "Author": "Autore",
 "AuthorPl": "Autori",
@@ -11,9 +12,12 @@
 "Cancel": "Annulla",
 "Character": "Personaggio",
 "Configure": "Configura",
+"Confirm": "Conferma",
 "Command": "Comando",
 "Collapse": "Collassa",
+"Coordinates": "Coordinate",
 "Close": "Chiudi",
+"Deactivate": "Disattiva",
 "Degrees": "Gradi",
 "Default": "Predefinito",
 "Delete": "Elimina",
@@ -31,6 +35,7 @@
 "GridSpaces": "Spazi Griglia",
 "Install": "Installazione",
 "Elevation": "Elevazione",
+"Sort": "Ordina",
 "Foundry Virtual Tabletop": "Foundry Virtual Tabletop",
 "File Path": "Percorso File",
 "Height": "Altezza",
@@ -127,6 +132,153 @@
 "ADVENTURE.DocumentRemove": "Questo Documento verrà rimosso alla creazione dell'Avventura",
 
 "APP.NavigateBackConfirm": "Sei sicuro di voler uscire da Foundry Virtual Tabletop?",
+
+"AMBIENT_LIGHT": {
+  "ACTIONS": {
+    "CREATE": "Crea luce ambientale",
+    "UPDATE": "Aggiorna luce ambientale",
+    "RESET": "Ripristina Opzioni Avanzate"
+  },
+  "FIELDS": {
+    "x": {
+      "label": "X"
+    },
+    "y": {
+      "label": "Y"
+    },
+    "elevation": {
+      "label": "Elevazione"
+    },
+    "rotation": {
+      "label": "Angolo di Rotazione"
+    },
+    "vision": {
+      "label": "Fornisce Visione",
+      "hint": "Questa fonte di luce conta come una fonte di visione, rivelando aree aggiuntive della Scena anche se non \u00e8 in linea di vista di un Token controllato."
+    },
+    "walls": {
+      "label": "Vincolato da Pareti",
+      "hint": "Configura se l'area di effetto di questa fonte di luce \u00e8 vincolata da pareti vicine."
+    }
+  },
+  "LABELS": {
+    "radius": "Raggio Luce",
+    "radiusHint": "Configura la distanza di emissione della luce da questa fonte in cui il raggio di luce intensa \u00e8 incluso nel raggio di luce fioca.",
+    "darknessAdvancedWarning": "Le opzioni di configurazione avanzate sono supportate solo per le fonti di luce non oscure."
+  },
+  "SECTIONS": {
+    "BASIC": "Configurazione Base",
+    "ADVANCED": "Opzioni Avanzate",
+    "ANIMATION": "Animazione Luce",
+    "APPEARANCE": "Aspetto Luce",
+    "PLACEMENT": "Posizionamento Luce"
+  }
+},
+
+
+"AMBIENT_SOUND": {
+"ACTIONS": {
+  "CREATE": "Crea Suono Ambientale",
+  "UPDATE": "Aggiorna Suono Ambientale"
+},
+"FIELDS": {
+  "x": {
+    "label": "X"
+  },
+  "y": {
+    "label": "Y"
+  },
+  "elevation": {
+    "label": "Elevazione"
+  },
+  "path": {
+    "label": "Percorso File Sorgente",
+    "hint": "Configura il suono ambientale per riprodurre un file audio quando i token si muovono nel suo raggio."
+  },
+  "radius": {
+    "label": "Raggio Effetto"
+  },
+  "volume": {
+    "label": "Volume Massimo",
+    "hint": "Definisci il volume massimo del suono nel suo punto di origine (se in dissolvenza) o ovunque nell'area."
+  },
+  "easing": {
+    "label": "Dissolvenza Volume",
+    "hint": "Regola il livello di volume del suono mentre i Token si avvicinano all'origine."
+  },
+  "hidden": {
+    "label": "Nascosta",
+    "hint": "Attiva o disattiva temporaneamente questa fonte sonora."
+  },
+  "walls": {
+    "label": "Vincolato da Pareti",
+    "hint": "Configura se l'area di effetto di questa fonte audio \u00e8 vincolata da pareti vicine."
+  },
+  "darkness": {
+    "label": "Intervallo Attivazione Oscurit\u00e0",
+    "hint": "Puoi specificare un intervallo di livelli di oscurit\u00e0 durante il quale questo suono ambientale sar\u00e0 udibile.",
+    "min": {
+      "label": "Tra"
+    },
+    "max": {
+      "label": "e"
+    }
+  },
+  "effects": {
+    "base": {
+      "type": {
+        "label": "Effetto Base"
+      },
+      "intensity": {
+        "label": "Intensità Effetto Base"
+      },
+        "hint": "Applica un effetto audio al suono che filtra o trasforma il suo suono."
+    },
+    "muffled": {
+      "type": {
+        "label": "Effetto Ovattato"
+      },
+      "intensity": {
+        "label": "Intensità Effetto Ovattato"
+      },
+        "hint": "Applica un effetto audio al suono che sostituisce l'effetto base quando il suono \u00e8 ovattato da pareti intermedie. Un suono pu\u00f2 essere ovattato solo se non \u00e8 vincolato da pareti."
+    }
+  }
+},
+"SECTIONS": {
+  "SOURCE": "Sorgente",
+  "PLACEMENT": "Posizionamento",
+  "PLACEMENT_HINT": "Configura la posizione di origine, l'elevazione e il raggio della fonte audio. L'elevazione non \u00e8 ancora utilizzata ed \u00e8 fornita solo come riferimento.",
+  "VOLUME": "Volume",
+  "ACTIVATION": "Attivazione",
+  "EFFECTS": "Effetti Speciali"
+}
+},
+
+"APPLICATION": {
+  "TOOLS": {
+    "ControlsMenu": "Controlli Applicazione",
+    "ToggleControls": "Mostra\/Nascondi Controlli",
+    "Close": "Chiudi Finestra"
+  }
+},
+
+"AUDIO": {
+  "CHANNELS": {
+    "MUSIC": {
+      "label": "Musica",
+      "tooltip": "Controlla il volume locale delle playlist e dei suoni classificati come musica."
+    },
+    "ENVIRONMENT": {
+      "label": "Ambiente",
+      "tooltip": "Controlla il volume locale delle playlist e dei suoni ambientali classificati come ambiente."
+    },
+    "INTERFACE": {
+      "label": "Interfaccia",
+      "tooltip": "Controlla il volume locale dei suoni relativi all'interfaccia utente o all'interazione dell'utente."
+    }
+  }
+},
 
 "CARDS.CardsDeck": "Mazzo di Carte",
 "CARDS.CardsHand": "Mano",
@@ -254,8 +406,9 @@
 "COMBAT.NoneActive": "Non c'è nessun Incontro di Combattimento nella scena visualizzata.",
 "COMBAT.NoneRemaining": "In questo incontro non son rimasti combattenti non sconfitti.",
 "COMBAT.NotStarted": "Non Iniziato",
+"COMBAT.PanToCombatant": "Vai al Combattente",
 "COMBAT.PingCombatant": "Combattente Ping",
-"COMBAT.PingInvisibleToken": "Non puoi eseguire il ping di un token che non puoi vedere.",
+"COMBAT.WarnNonVisibleToken": "Questo combattente non \u00e8 visibile per te.",
 "COMBAT.Resource": "Risorsa Tracciata",
 "COMBAT.ResourceHint": "Scegli un attributo da tracciare per ogni combattente.",
 "COMBAT.Round": "Round",
@@ -281,6 +434,7 @@
 "COMBAT.TurnPrev": "Turno Precedente",
 "COMBAT.UnknownCombatant": "Combattente Sconosciuto",
 "COMBAT.Unlinked": "Combattimento non collegato, fai clic per collegare alla scena",
+"COMBAT.CannotLinkToScene": "Non puoi collegare il Combattimento a una Scena che non contiene tutti i suoi Combattenti.",
 
 "COMBAT.CombatantActor": "Personaggio Rappresentato",
 "COMBAT.CombatantCreate": "Crea Combattente",
@@ -296,7 +450,7 @@
 "COMBAT.CombatantReroll": "Ri-tira Iniziativa",
 "COMBAT.CombatantToken": "Token Rappresentato",
 "COMBAT.CombatantScene": "Scena Combattimento",
-"COMBAT.CombatantNotInScene": "Il Combattente {name} non è presente nella scena attualmente visualizzata",
+"COMBAT.CombatantNotInScene": "Il Combattente {name} non \u00e8 presente nella scena attualmente visualizzata",
 
 "COMPENDIUM.Name": "Nome Compendium",
 "COMPENDIUM.Create": "Nuovo Compendium",
@@ -306,7 +460,6 @@
 "COMPENDIUM.Delete": "Elimina Compendium",
 "COMPENDIUM.DeleteWarning": "Questo Compendium verrà eliminato definitivamente e non potrà essere ripristinato.",
 "COMPENDIUM.DeleteEntry": "Elimina Voce",
-"COMPENDIUM.DeleteEntryWarning": "Questa voce del Compendium e i suoi dati verranno eliminati definitivamente.",
 "COMPENDIUM.Duplicate": "Duplica Compendium",
 "COMPENDIUM.DuplicateTitle": "Nuovo Titolo del Compendium",
 "COMPENDIUM.DuplicateHint": "E’ possibile duplicare questo compendio nel tuo mondo per averne una copia locale e modificarne in modo sicuro il suo contenuto.",
@@ -319,7 +472,7 @@
 "COMPENDIUM.SidebarTitle": "Compendia",
 "COMPENDIUM.Type": "Tipo Documento",
 "COMPENDIUM.TypeHint": "Ogni Compendium contiene un tipo specifico di Documento.",
-"COMPENDIUM.ToggleLocked": "abilita/disabilita blocco modifica",
+"COMPENDIUM.ToggleLocked": "Abilita/disabilita blocco modifica",
 "COMPENDIUM.ToggleLockedWarning": "Stai tentando di sbloccare un compendium che non appartiene a questo mondo per modificarlo. Eventuali modifiche apportate a questo compendium potrebbero andare perse se il sistema o il modulo proprietario lo aggiorna. Potresti invece duplicare il compendium nel tuo Mondo. Desideri procedere?",
 "COMPENDIUM.CannotViewWarning": "Non disponi di autorizzazioni sufficienti per visualizzare questo Compendio..",
 "COMPENDIUM.OwnershipInheritBelow": "Eredita da sotto",
@@ -329,6 +482,7 @@
 "CONTROLS.NavLabel": "Paletta Controlli Canvas",
 "CONTROLS.Instructions": "Questo elenco descrive i comandi comuni della tastiera e del mouse utilizzati per controllare vari aspetti dell'ambiente Foundry Virtual Tabletop. Alcuni controlli sono disponibili solo per l'utente Game Master, evidenziati in viola chiaro.",
 "CONTROLS.GroupToken": "Controlli Token",
+"CONTROLS.CommonForceSnap": "Forza l'aggancio ai vertici della griglia",
 "CONTROLS.BasicSelect": "Seleziona Tokens",
 "CONTROLS.BasicSelectP": "Seleziona tutti i token che possiedi per vedere il loro specifico campo di vista. Se non viene selezionato nessun token, vedrai cosa possono vedere tutti i token che possiedi.",
 "CONTROLS.TargetSelect": "Seleziona Obiettivi",
@@ -361,6 +515,7 @@
 "CONTROLS.DrawingText": "Testo",
 "CONTROLS.DrawingClear": "Cancella Disegni",
 "CONTROLS.DrawingConfig": "Configura Disegni",
+"CONTROLS.DrawingRole": "Attiva\/Disattiva Disegni Informativi",
 "CONTROLS.GroupWall": "Controlli Pareti",
 "CONTROLS.WallDraw": "Disegna Pareti",
 "CONTROLS.WallBasic": "Pareti Base",
@@ -378,10 +533,8 @@
 "CONTROLS.WallSecretHiddenP": "Le Porte Segrete non possono essere viste dai giocatori",
 "CONTROLS.WallSelect": "Selezione Rettangolare Pareti",
 "CONTROLS.CommonMoveWithoutSnapping": "Muoviti Senza Agganciare",
-"CONTROLS.WallSelectEdit": "<span class=\"reference\">Doppio Click</span> su un punto della Parete",
-"CONTROLS.WallSnap": "Forza Allinea a Griglia",
-"CONTROLS.WallSnapH": "Aggancia",
-"CONTROLS.WallSnapP": "I punti della Parete si agganciano all'angolo della griglia più vicino quando sono attivi",
+"CONTROLS.WallSelectEdit": "<span class=\"reference\">Doppio Click<\/span> su un punto della Parete",
+"CONTROLS.WallSnapP": "I punti della Parete si agganciano all'angolo della griglia pi\u00f9 vicino quando sono attivi",
 "CONTROLS.WallClone": "Clona Porte",
 "CONTROLS.WallCloseDoors": "Chiudi tutte le Porte",
 "CONTROLS.WallDoorsClosed": "{number} porte sono state chiuse",
@@ -412,6 +565,18 @@
 "CONTROLS.NoteSelect": "Seleziona Annotazione",
 "CONTROLS.NoteToggle": "Attiva/Disattiva Visualizzazione Annotazioni",
 "CONTROLS.NoteClear": "Rimuovi Annotazione",
+"CONTROLS.RegionShape": "Aggiungi una Forma alla Regione selezionata. Se nessuna Regione \u00e8 selezionata, ne verr\u00e0 creata una nuova. Le Forme sovrapposte nella stessa Regione si combineranno. Le Forme nella stessa Regione condividono tutte lo stesso colore.",
+"CONTROLS.GroupRegion": "Controlli delle Regioni",
+"CONTROLS.RegionSelect": "Seleziona Regioni",
+"CONTROLS.RegionSelectP": "Seleziona una o pi\u00f9 Regioni nella Scena. Una Regione selezionata \u00e8 di un colore pieno e le Regioni non selezionate sono a strisce.",
+"CONTROLS.RegionRectangle": "Disegna Rettangolo",
+"CONTROLS.RegionEllipse": "Disegna Ellisse",
+"CONTROLS.RegionPolygon": "Disegna Poligono",
+"CONTROLS.RegionHole": "Crea Buchi",
+"CONTROLS.RegionHoleP": "Quando \u00e8 attivo, qualsiasi Forma che disegni su una Regione usando uno degli strumenti di Forma creer\u00e0 un Buco in cui i comportamenti della Regione non si applicheranno.",
+"CONTROLS.RegionSnap": "Quando \u00e8 attivo, qualsiasi Forma che disegni su una Regione usando uno degli strumenti di Forma verr\u00e0 agganciata alla griglia.",
+"CONTROLS.RegionClear": "Cancella Regioni",
+"CONTROLS.RegionPerformance": "<em>Nota sulle prestazioni:<\/em> Ogni disegno \u00e8 una propria Forma. Fai attenzione a non posizionare pi\u00f9 Forme completamente una dentro l'altra. Piuttosto che combinare Forme semplici per creare una Forma complessa, considera l'utilizzo dello strumento di Poligono per le Regioni.",
 "CONTROLS.ClearAll": "Cancella tutti gli Oggetti",
 "CONTROLS.ClearAllHint": "Eliminare definitivamente tutti gli oggetti {type} da questa scena?",
 "CONTROLS.HeaderGame": "Controlli Di Gioco Generali",
@@ -447,19 +612,23 @@
 "CONTROLS.Double": "Doppio",
 "CONTROLS.RightClick": "Click Destro",
 "CONTROLS.MiddleClick": "Click Centrale",
-"CONTROLS.AltRightClick": "ALT + Tasto Destro",
+"CONTROLS.AltRightClick": "{alt} + Tasto Destro",
 "CONTROLS.Click": "Click",
 "CONTROLS.ClickDrag": "Click + Trascina",
 "CONTROLS.ClickOrClickDrag": "<span class=\"reference\">Click</span> o <span class=\"reference\">Click + Trascina</span>",
-"CONTROLS.CtrlClickDrag": "CTRL + Click + Trascina",
-"CONTROLS.AltClick": "ALT + Click",
-"CONTROLS.CtrlClick": "CTRL + Click",
+"CONTROLS.Ctrl": "Control",
+"CONTROLS.CtrlAbbr": "CTRL",
+"CONTROLS.CtrlClickDrag": "{mod} + Click + Trascina",
+"CONTROLS.Alt": "ALT",
+"CONTROLS.AltClick": "{alt} + Click",
+"CONTROLS.AltClickDrag": "{alt} + Click + Trascina",
+"CONTROLS.CtrlClick": "{mod} + Click",
 "CONTROLS.ShiftClick": "SHIFT + Click",
-"CONTROLS.ChainCtrlClick": "Tieni <span class=\"reference\">CTRL</span> poi <span class=\"reference\">Click</span>",
+"CONTROLS.ChainCtrlClick": "Tieni <span class=\"reference\">{mod}</span> poi <span class=\"reference\">Click</span>",
 "CONTROLS.DoubleClick": "Doppio Click",
 "CONTROLS.DoubleRightClick": "Doppio Click Destro",
 "CONTROLS.ShiftScroll": "SHIFT + Scorri",
-"CONTROLS.ShiftOrCtrlScroll": "<span class=\"reference\">SHIFT + Scorri</span> or <span class=\"reference\">CTRL + Scorri</span>",
+"CONTROLS.ShiftOrCtrlScroll": "<span class=\"reference\">SHIFT + Scorri</span> or <span class=\"reference\">{mod} + Scorri</span>",
 "CONTROLS.ShiftDrag": "SHIFT + Trascina",
 "CONTROLS.Spacebar": "Barra Spaziatrice",
 "CONTROLS.Delete": "CANC",
@@ -514,6 +683,7 @@
 "CONTROLS.CommonRotate": "Ruota",
 "CONTROLS.CommonToggleHUD": "Attiva/Disattiva HUD",
 "CONTROLS.CommonDraw": "Disegna",
+"CONTROLS.CommonDrawProportional": "Disegna Proporzionalmente",
 "CONTROLS.CommonPlace": "Posiziona",
 "CONTROLS.CommonBlocks": "Blocca",
 "CONTROLS.CommonChain": "Lega",
@@ -527,9 +697,31 @@
 "CONTROLS.CommonSelectMultiple": "Seleziona Più",
 "CONTROLS.CommonOpenSheet": "Apri Scheda",
 "CONTROLS.DisableToolclips": "Disabilita i Toolclips nelle impostazioni",
+"CONTROLS.CopiedObjects": "Copiati {count} oggetti {type}.",
+"CONTROLS.PastedObjects": "Incollati {count} oggetti {type}.",
+"CONTROLS.DeletedObjects": "Eliminati {count} oggetti {type}.",
+"CONTROLS.UndoCreateObjects": "Annullata creazione di {count} oggetti {type}.",
+"CONTROLS.UndoDeleteObjects": "Annullata eliminazione di {count} oggetti {type}.",
+"CONTROLS.EmptyUndoHistory": "Nessuna cronologia tracciata per annullare oggetti {type}.",
+"CONTROLS.ObjectIsLocked": "Non puoi eseguire questa azione mentre l'oggetto {type} \u00e8 bloccato.",
+"CONTROLS.ObjectConfigured": "Non puoi eseguire questa azione mentre configuri un altro oggetto.",
 
 "DICE.ErrorNonNumeric": "La formula del tiro di dado {formula} non ha prodotto un risultato numerico.",
+"DICE.ManualRoll": "Lancio Manuale",
+"DICE.RollResolution": "Risultato del Lancio",
+"DICE.SubmitRoll": "Invia Lancio",
+"DICE.SubmitRollPl": "Invia Lanci",
 "DICE.WarnMissingData": "L'attributo {match} non era presente nei dati del tiro forniti.",
+"DICE.CONFIG": {
+  "Hint": "Configura come viene eseguito il lancio dei dadi.",
+  "Label": "Configura Dadi",
+  "Title": "Configurazione Dadi"
+},
+"DICE.FULFILLMENT": {
+  "Default": "Lancio Digitale Foundry VTT",
+  "Mersenne": "Lancio Digitale (Mersenne Twister)",
+  "Manual": "Inserimento Manuale"
+},
 
 "DOCUMENT.Create": "Crea {type}",
 "DOCUMENT.Delete": "Elimina {type}",
@@ -595,6 +787,10 @@
 "DOCUMENT.Settings": "Impostazioni",
 "DOCUMENT.RollTable": "Tabella",
 "DOCUMENT.RollTables": "Tabelle",
+"DOCUMENT.Region": "Regione",
+"DOCUMENT.Regions": "Regioni",
+"DOCUMENT.RegionBehavior": "Comportamento Regione",
+"DOCUMENT.RegionBehaviors": "Comportamenti Regione",
 "DOCUMENT.TableResult": "Risultato Tabella",
 "DOCUMENT.TableResults": "Risultati Tabella",
 "DOCUMENT.Tile": "Tile",
@@ -641,7 +837,11 @@
 "DRAWING.FontFamily": "Famiglia Font",
 "DRAWING.FontSize": "Dimensione Font",
 "DRAWING.TextColor": "Colore Testo",
-"DRAWING.TextOpacity": "Opacità Testo",
+"DRAWING.TextOpacity": "Opacit\u00e0 Testo",
+"DRAWING.Role": "Ruolo Disegno",
+"DRAWING.RoleHint": "Un Disegno che rappresenta un \"Oggetto\" viene visualizzato nel Gruppo Canvas Primario ed \u00e8 influenzato dall'illuminazione e dall'esplorazione della nebbia di guerra. Un Disegno che trasmette \"Informazioni\" viene visualizzato nel Gruppo Interfaccia ed \u00e8 visibile a tutti i giocatori a meno che non sia nascosto.",
+"DRAWING.Object": "Oggetto",
+"DRAWING.Information": "Informazione",
 
 "EFFECT.MODE_CUSTOM": "Personalizzato",
 "EFFECT.MODE_MULTIPLY": "Moltiplica",
@@ -653,8 +853,8 @@
 "EFFECT.TabDuration": "Durata",
 "EFFECT.TabEffects": "Effetti",
 "EFFECT.Name": "Nome Effetto",
-"EFFECT.Icon": "Icona Effetto",
-"EFFECT.IconTint": "Colore Icona",
+"EFFECT.Image": "Immagine Effetto",
+"EFFECT.Tint": "Colore Tinta Icona",
 "EFFECT.Disabled": "Disabilita Effetto",
 "EFFECT.Origin": "Origine Effetto",
 "EFFECT.Transfer": "Applica Effetto al Personaggio",
@@ -696,6 +896,8 @@
 "EFFECT.StatusDegen": "Degenerante",
 "EFFECT.StatusUpgrade": "Potenziato",
 "EFFECT.StatusDowngrade": "Indebolito",
+"EFFECT.StatusHover": "Sospeso",
+"EFFECT.StatusBurrow": "Sottoterra",
 "EFFECT.StatusInvisible": "Invisibile",
 "EFFECT.StatusTarget": "Sotto Mira",
 "EFFECT.StatusMarked": "Marcato",
@@ -706,7 +908,7 @@
 "EFFECT.StatusMagicShield": "Scudo Magico",
 "EFFECT.StatusHolyShield": "Scudo Benedetto",
 
-"ERROR.BrowserVersion": "Foundry Virtual Tabletop utilizza moderne funzionalità JavaScript che non sono supportate per versioni di {browser} inferiori a {minimum}. Stai utilizzando {browser} versione {versione}. Aggiorna o utilizza un browser diverso.",
+"ERROR.BrowserVersion": "Foundry Virtual Tabletop utilizza funzionalità JavaScript moderne che non sono supportate per versioni di {browser} inferiori a {minimum}. Stai utilizzando {browser} versione {versione}. Aggiorna o utilizza un browser diverso.",
 "ERROR.ElectronVersion": "Stai utilizzando una versione precedente del client Electron di Foundry Virtual Tabletop. Per ottenere le migliori prestazioni, ti consigliamo di scaricare nuovamente la versione desiderata di Foundry Virtual Tabletop ed eseguire una reinstallazione completa del software.",
 "ERROR.LowResolution": "Foundry Virtual Tabletop richiede una risoluzione minima dello schermo di 1366px per 768px o superiore. La tua risoluzione è attualmente {width}px per {height}px. Con le impostazioni di visualizzazione correnti, molte funzioni del software potrebbero non funzionare correttamente.",
 "ERROR.NoWebGL": "Al momento il tuo browser non supporta il rendering WebGL richiesto da Foundry Virtual Tabletop. Assicurati di avere il rendering hardware e WebGL abilitati nel tuo browser.",
@@ -723,11 +925,17 @@
 "WARNING.GridConfigNoBG": "Stai utilizzando lo strumento di configurazione della griglia per una scena senza immagine di sfondo. Questa operazione non è raccomandata e può produrre risultati imprevedibili.",
 "WARNING.ForegroundDimensionsMismatch": "Le dimensioni dell'immagine del livello di primo piano configurata non corrispondono alle dimensioni dell'immagine del livello di sfondo per questa scena. Il primo piano è stato ridimensionato, il che potrebbe avere risultati indesiderati.",
 "WARNING.ObjectDoesNotExist": "{name} \"{identifier}\" non esiste",
+"WARNING.TilingSpriteDeprecation": "Un modulo o un sistema sta utilizzando la classe TilingSprite legacy, che non \u00e8 pi\u00f9 supportata.",
 
-"EULA.Acknowledge": "Riconoscimenti",
-"EULA.Agree": "Accetta",
-"EULA.AgreeHint": "Accetto i termini",
-"EULA.Decline": "Rifiuta",
+"EULA": {
+  "Acknowledge": "Accetta Accordo",
+  "Agree": "Accetto",
+  "AgreeLabel": "Accetto questi termini",
+  "AgreeHint": "Selezionando la casella sopra indichi di aver letto e accettato i termini del Contratto di Licenza per l'Utente Finale di Foundry Virtual Tabletop.",
+  "Decline": "Rifiuta",
+  "Declined": "Hai rifiutato il Contratto di Licenza per l'Utente Finale e non puoi utilizzare il software.",
+  "ErrorAgreeRequired": "Devi spuntare la casella per confermare la tua accettazione di questo accordo per procedere."
+},
 
 "EDITOR.Format": "Formato",
 "EDITOR.Font": "Font",
@@ -761,8 +969,9 @@
 "EDITOR.Save": "Salva Modifiche",
 "EDITOR.SaveAndClose": "Salva e Chiudi Editor",
 "EDITOR.DiscardHTML": "Elimina Modifiche HTML",
-"EDITOR.EditingHTMLWarning": "Un altro utente ha modificato lo stesso documento. Qualsiasi modifica apportata all'HTML cancellerebbe le modifiche e quindi non può essere salvata.",
-"EDITOR.Resync": "Lo stato dell'editor è stato desincronizzato dal server e deve essere reimpostato. Il contenuto dell'editor originale è stato copiato negli appunti.",
+"EDITOR.EmbedFailed": "Impossibile incorporare il contenuto da '{uuid}'.",
+"EDITOR.EditingHTMLWarning": "Un altro utente ha modificato lo stesso documento. Qualsiasi modifica apportata all'HTML cancellerebbe le modifiche e quindi non pu\u00f2 essere salvata.",
+"EDITOR.Resync": "Lo stato dell'editor \u00e8 stato desincronizzato dal server e deve essere reimpostato. Il contenuto dell'editor originale \u00e8 stato copiato negli appunti.",
 "EDITOR.NoUploadPermission": "Devi disporre delle autorizzazioni di caricamento dei file per inserire il contenuto dell'immagine.",
 "EDITOR.UploadingFile": "Caricamento file immagine.",
 "EDITOR.UploadComplete": "Caricamento completato.",
@@ -796,6 +1005,17 @@
 "EDITOR.TableDimensions": "Dimensioni",
 "EDITOR.TableColumns": "Col.",
 "EDITOR.TableRows": "Righe",
+
+"ELEMENTS": {
+  "DOCUMENT_TAGS": {
+    "Add": "Aggiungi Documento",
+    "Remove": "Rimuovi Documento"
+  },
+  "TAGS": {
+    "Add": "Aggiungi Tag",
+    "Remove": "Rimuovi Tag"
+  }
+},
 
 "FILES.CreateDirectory": "Crea Cartella",
 "FILES.CreateSubfolder": "Crea Sotto-Cartella",
@@ -836,6 +1056,7 @@
 "FILES.BrowseTooltip": "Sfoglia Files",
 "FILES.InPixels": "In Pixels",
 "FILES.UnitPixels": "(pixels)",
+"FILES.ErrorDisallowedExtension": "Il file \"{name}\" ha un'estensione non valida \"{ext}\" che non \u00e8 consentita per questo tipo di FilePicker.\nLe estensioni consentite includono: {allowed}.",
 
 "FONTS.AddFont": "Aggiungi Font",
 "FONTS.Type": "Tipo Font",
@@ -869,16 +1090,18 @@
 
 "ITEM.ViewArt": "Visualizza Immagine Oggetto",
 
+"HUD.Elevation": "Elevazione",
+"HUD.OpenConfig": "Apri Configurazione",
 "HUD.AssignStatusEffects": "Assegna Effetti di Stato",
+"HUD.ToggleTargetState": "Attiva/Disattiva Bersaglio",
 "HUD.ToggleCombatState": "Attiva/disattiva Combattimento",
 "HUD.ToggleVis": "Attiva/Disattiva Visibilità",
 "HUD.ToggleLock": "Attiva/Disattiva Stato Blocco",
 "HUD.ToFront": "Porta in Primo Piano",
 "HUD.ToBack": "Porta in Secondo Piano",
-"HUD.TileOverhead": "Overhead Tile",
-"HUD.TileUnderfoot": "Underfoot Tile",
 "HUD.TilePlay": "Riproduci Tile Video",
 "HUD.TilePause": "Metti in Pausa Tile Video",
+"HUD.WarningEffectNoActor": "Non puoi assegnare effetti di stato a un Token che non ha un Attore associato.",
 
 "JOURNAL.ModeText": "Testo",
 "JOURNAL.ModeImage": "Immagine",
@@ -962,6 +1185,8 @@
 "KEYBINDINGS.Copy": "Copia Oggetti",
 "KEYBINDINGS.Paste": "Incolla Oggetti",
 "KEYBINDINGS.Target": "Bersaglia Token",
+"KEYBINDINGS.SendToBack": "Porta gli oggetti in secondo piano",
+"KEYBINDINGS.BringToFront": "Porta gli oggetti in primo piano",
 "KEYBINDINGS.ToggleCharacterSheet": "Attiva/Disattiva Scheda Personaggio",
 "KEYBINDINGS.PTTKey": "Premi per parlare / Premi per disattivare l'audio",
 "KEYBINDINGS.PanUp": "Muovi o Panoramica in Alto",
@@ -982,43 +1207,82 @@
 "KEYBINDINGS.ErrorReservedModifier": "Impossibile impostare \"{key}\" come associazione, poiché è un modificatore riservato per questa azione di associazione tasti",
 "KEYBINDINGS.FocusChat": "Focus Chat",
 
-"LIGHT.ConfigTitle": "Configurazione Sorgente Luminosa",
-"LIGHT.NavLabel": "Schede Configurazione Luce",
-"LIGHT.HeaderBasic": "Config. Base",
-"LIGHT.HeaderAdvanced": "Avanzate",
-"LIGHT.HeaderAnimation": "Animazione Luce",
-"LIGHT.Create": "Crea Sorgente di Luce",
-"LIGHT.Update": "Aggiorna Sorgente Luminosa",
-"LIGHT.Alpha": "Intensità Colore",
-"LIGHT.Angle": "Angolo di Emissione",
-"LIGHT.AngleHint": "Limitare l'angolo di emissione di questa sorgente luminosa e configurarne la rotazione.",
-"LIGHT.Bright": "Intensa",
-"LIGHT.Color": "Colore Luce",
-"LIGHT.ColorHint": "Applica la colorazione a questa fonte di luce e configurane l'intensità.",
-"LIGHT.Coordinates": "Coordinate",
-"LIGHT.Contrast": "Contrasto",
-"LIGHT.ContrastHint": "Regola il contrasto delle superfici illuminate da questa fonte di luce. Il valore predefinito per una sorgente di luce standard è 0.",
-"LIGHT.DarknessRange": "Gamma Attivazione Oscurità",
-"LIGHT.DarknessRangeHint": "È possibile specificare una gamma di livelli di oscurità durante la quale questa fonte di luce sarà visibile.",
-"LIGHT.Dim": "Fioca",
-"LIGHT.Attenuation": "Attenuazione",
-"LIGHT.AttenuationHint": "L'illuminazione sfuma gradualmente tra luminoso, soffuso e buio.",
-"LIGHT.Luminosity": "Luminosità",
-"LIGHT.LuminosityHint": "Regola la luminosità di questa fonte di luce. Luci più luminose sono meno attenuate dall'oscurità. Il valore predefinito per una sorgente di luce standard è 0,5.",
-"LIGHT.Radius": "Raggio di Luce",
-"LIGHT.RadiusHint": "Configura la distanza di emissione della luce da questa sorgente in cui il raggio della luce intensa è incluso nel raggio della luce fioca.",
-"LIGHT.ResetAdvanced": "Ripristina Opzioni Avanzate",
-"LIGHT.Rotation": "Angolo di rotazione",
-"LIGHT.Saturation": "Saturazione",
-"LIGHT.SaturationHint": "Regola il contrasto delle superfici illuminate da questa fonte di luce. Il valore predefinito per una sorgente di luce standard è 0.",
-"LIGHT.Shadows": "Ombre",
-"LIGHT.ShadowsHint": "Migliora l'intensità dei colori scuri illuminati da questa fonte di luce. Il valore predefinito per una sorgente di luce standard è 0.",
-"LIGHT.Vision": "Fornisce Visione",
-"LIGHT.VisionHint": "Fornire un'ulteriore fonte di visione per i token controllati.",
-"LIGHT.Walls": "Vincolata da Mura",
-"LIGHT.WallsHint": "Configura se l'area d'effetto per questa sorgente di luce è vincolata dai muri vicini.",
-"LIGHT.ColorationTechnique": "Tecnica di Colorazione",
-"LIGHT.ColorationTechniqueHint": "La tecnica di colorazione applicata alla sorgente luminosa contribuisce alla fusione additiva dell'aspetto risultante.",
+"LIGHT.FIELDS": {
+  "alpha": {
+    "label": "Intensit\u00e0 del colore",
+    "hint": "Modifica l'intensit\u00e0 del colore emesso da questa fonte di luce."
+  },
+  "animation": {
+    "label": "Animazione della luce",
+    "type": {
+      "label": "Tipo di animazione della luce"
+    },
+    "speed": {
+      "label": "Velocit\u00e0 animazione",
+      "hint": "Aumentare la velocit\u00e0 dell'animazione fa s\u00ec che l'animazione venga riprodotta pi\u00f9 velocemente."
+    },
+    "intensity": {
+      "label": "Intensit\u00e0 animazione",
+      "hint": "Aumentare l'intensit\u00e0 dell'animazione rende l'animazione pi\u00f9 evidente."
+    },
+    "reverse": {
+      "label": "Direzione inversa"
+    }
+  },
+  "angle": {
+    "label": "Angolo di emissione",
+    "hint": "Limita l'angolo di emissione per questa fonte di luce e configura la sua rotazione."
+  },
+  "attenuation": {
+    "label": "Attenuazione",
+    "hint": "Transizione graduale dell'illuminazione tra luminoso, tenue e scuro."
+  },
+  "color": {
+    "label": "Colore della luce",
+    "hint": "Applica una colorazione a questa fonte di luce e configura la sua intensit\u00e0."
+  },
+  "coloration": {
+    "label": "Tecnica di colorazione",
+    "hint": "La tecnica di colorazione applicata alla fonte di luce contribuisce alla miscelazione additiva dell'aspetto risultante."
+  },
+  "contrast": {
+    "label": "Contrasto",
+    "hint": "Regola il contrasto delle superfici illuminate da questa fonte di luce. Il valore predefinito per una fonte di luce standard \u00e8 0."
+  },
+  "dim": {
+    "label": "Tenue"
+  },
+  "bright": {
+    "label": "Luminosa"
+  },
+  "luminosity": {
+    "label": "Luminosit\u00e0",
+    "hint": "Regola la luminosit\u00e0 di questa fonte di luce. Le luci pi\u00f9 luminose sono meno ridotte dall'oscurit\u00e0. Il valore predefinito per una fonte di luce standard \u00e8 0.5."
+  },
+  "negative": {
+    "label": "\u00c8 una fonte di oscurit\u00e0",
+    "hint": "Una fonte di oscurit\u00e0 blocca la luce e la visione e sopprime le luci o le fonti di visione che si trovano all'interno della sua area di effetto."
+  },
+  "saturation": {
+    "label": "Saturazione",
+    "hint": "Regola la saturazione delle superfici illuminate da questa fonte di luce. Il valore predefinito per una fonte di luce standard \u00e8 0."
+  },
+  "shadows": {
+    "label": "Ombre",
+    "hint": "Migliora o intensifica i colori scuri illuminati da questa fonte di luce. Il valore predefinito per una fonte di luce standard \u00e8 0."
+  },
+  "darkness": {
+    "label": "Intervallo di attivazione dell'oscurit\u00e0",
+    "hint": "\u00c8 possibile specificare un intervallo di livelli di oscurit\u00e0 durante il quale questa fonte di luce sar\u00e0 visibile.",
+    "min": {
+        "label": "Tra"
+    },
+    "max": {
+        "label": "e"
+    }
+  }
+},
+
 "LIGHT.LegacyColoration": "Colorazione Legacy",
 "LIGHT.AdaptiveLuminance": "Luminanza Adattiva",
 "LIGHT.InternalHalo": "Aura Interna",
@@ -1030,11 +1294,8 @@
 "LIGHT.HighAbsorption": "Alto Assorbimento",
 "LIGHT.InvertAbsorption": "Inverti Assorbimento",
 "LIGHT.NaturalLight": "Luce Naturale",
-"LIGHT.AnimationType": "Tipo di Animazione Luce",
-"LIGHT.AnimationHint": "Aumenti della velocità rendono l'animazione più veloce mentre gli aumenti dell'intensità rendono l'animazione più pronunciata.",
-"LIGHT.AnimationSpeed": "Velocità Animazione",
-"LIGHT.AnimationIntensity": "Intensità Animazione",
-"LIGHT.AnimationReverse": "Direzione Inversa",
+
+
 "LIGHT.AnimationTorch": "Luce Tremolante",
 "LIGHT.AnimationPulse": "Pulsazione",
 "LIGHT.AnimationChroma": "Cromatica",
@@ -1059,6 +1320,7 @@
 "LIGHT.AnimationSmokePatch": "Cortina di Fumo",
 "LIGHT.AnimationRevolving": "Luce Rotante",
 "LIGHT.AnimationSiren": "Luce Sirena",
+"LIGHT.AnimationMagicalGloom": "Oscurità Magica",
 
 "MACRO.Delete": "Elimina Macro",
 "MACRO.DeleteWarning": "Questa macro verrà eliminata definitivamente per tutti gli utenti.",
@@ -1092,9 +1354,10 @@
 "MODMANAGE.Search": "Filtra Moduli",
 "MODMANAGE.Submit": "Salva Impostazioni Modulo",
 "MODMANAGE.Dependencies": "Dipendenze",
+"MODMANAGE.RequiredDepError": "Questo modulo non pu\u00f2 essere disattivato in quanto \u00e8 richiesto dai seguenti moduli: {dependents}",
 "MODMANAGE.RequiredDependencies": "Dipendenze Richieste",
 "MODMANAGE.RecommendedDependencies": "Dipendenze Raccomandate",
-"MODMANAGE.DepRequiredEnable": "Questo modulo ha {number} dipendenze inattive necessarie perché funzioni correttamente:",
+"MODMANAGE.DepRequiredEnable": "Questo modulo ha {number} dipendenze inattive necessarie perch\u00e9 funzioni correttamente:",
 "MODMANAGE.DepOptionalEnable": "Questo modulo ha {number} dipendenze inattive che possono essere opzionalmente abilitate per migliorarlo:",
 "MODMANAGE.DepEnableCheck": "Abilitare il modulo e le dipendenze selezionate?",
 "MODMANAGE.DepDisable": "Questo modulo aveva {number} dipendenze che ora possono essere disabilitate:",
@@ -1112,7 +1375,6 @@
 "MODMANAGE.NavLabel": "Navigazione Gestione Moduli",
 "MODMANAGE.UpstreamPackages": "Ci sono {number} pacchetti che richiedono che questo pacchetto sia attivo. La disabilitazione di questo pacchetto disabiliterà anche quei pacchetti.",
 "MODMANAGE.UnavailableDocuments": "Documenti Resi Non Disponibili",
-"MODMANAGE.UnavailableDocumentsConfirm": "Diversi documenti saranno resi non disponibili se disabiliti questo modulo, sei sicuro di voler continuare?",
 
 "NOTE.AnchorPoint": "Punto di Ancoraggio del Testo",
 "NOTE.ConfigTitle": "Configurazione Note della Mappa",
@@ -1150,7 +1412,6 @@
 "PLAYERS.PlayerAvatar": "Avatar Giocatore",
 "PLAYERS.PlayerPronouns": "Pronomi Giocatore",
 "PLAYERS.PullToScene": "Passa Alla Scena",
-"PLAYERS.SaveConfig": "Salva Configurazione",
 "PLAYERS.ViewAvatar": "Visualizza Avatar Giocatore",
 "PLAYERS.Kick": "Espelli Giocatore",
 "PLAYERS.Ban": "Blocca Giocatore",
@@ -1158,10 +1419,7 @@
 
 "PLAYLIST.Delete": "Elimina Playlist",
 "PLAYLIST.Edit": "Modifica Playlist",
-"PLAYLIST.GlobalVolume": "Controlli Volume Utente",
-"PLAYLIST.PlaylistVolumeTooltip": "Regola il volume di tutte le playlist, come musica da combattimento, musica di sottofondo e soundboards.",
-"PLAYLIST.AmbientVolumeTooltip": "Regola il volume di tutti i suoni ambientali posizionati su una scena, come un fuoco scoppiettante o una cascata.",
-"PLAYLIST.InterfaceVolumeTooltip": "Regola il volume di tutti i suoni attivati attraverso l'interfaccia, come i messaggi di chat, i lanci di dadi e il tema del combattimento.",
+"PLAYLIST.Channel": "Canale Audio",
 "PLAYLIST.CurrentlyPlaying": "In Riproduzione",
 "PLAYLIST.ModeDisabled": "Solo Soundboard",
 "PLAYLIST.ModeSequential": "Playback Sequenziale",
@@ -1202,7 +1460,10 @@
 "PLAYLIST.BulkImportWarning": "Nessun suono di playlist valido è stato importato dalla cartella \"{path}\" richiesta",
 "PLAYLIST.PinToTop": "Pin in alto",
 "PLAYLIST.PinToBottom": "pin in basso",
-"PLAYLIST.VolumeTooltip": "Volume: {volume}%",
+"PLAYLIST.VOLUME": {
+  "CONTROLS": "Controlli Volume Utente",
+  "TOOLTIP": "Volume: {volume}%"
+},
 
 "SCENES.Accessibility" : "Permessi",
 "SCENES.AccessibilityGM" : "Solo DM",
@@ -1263,7 +1524,10 @@
 "SCENES.GridDistance": "Distanza",
 "SCENES.GridUnits": "Unità",
 "SCENES.GridReset": "Ripristina Modifiche",
+"SCENES.GridStyle": "Stile Griglia",
+"SCENES.GridThickness": "Spessore Griglia",
 "SCENES.HeaderAmbience": "Ambiente",
+"SCENES.HeaderAmbienceBasic": "Opzioni di Base",
 "SCENES.HeaderDetails": "Base",
 "SCENES.HeaderGrid": "Griglia",
 "SCENES.HeaderVision": "Illuminazione",
@@ -1301,6 +1565,36 @@
 "SCENES.FogExploredColorHint": "Colore applicato a tutte le aree della scena che sono state esplorate ma sono al di fuori dell'area di visione attuale.",
 "SCENES.FogUnexploredColor": "Colore Nebbia di Guerra inesplorata",
 "SCENES.FogUnexploredColorHint": "Colore applicato a tutte le aree inesplorate della scena.",
+
+"SCENES.ENVIRONMENT":{
+  "HeaderLabel": "Illuminazione Ambiente",
+  "Luminosity": "Luminosit\u00e0",
+  "LuminosityHint": "Controlla quanto luminosa appare la scena. Una luminosit\u00e0 pi\u00f9 alta rende la scena luminosa come una giornata di sole, mentre una luminosit\u00e0 pi\u00f9 bassa la rende pi\u00f9 scura e cupa.",
+  "Saturation": "Saturazione",
+  "SaturationHint": "Regola la purezza dei colori nella scena. Impostazioni superiori a 0 rendono i colori pi\u00f9 saturi (intensi e vibranti), mentre impostazioni negative attenuano e smorzano i colori.",
+  "Shadows": "Ombre",
+  "ShadowsHint": "Aumentando questo cursore, le ombre e gli elementi pi\u00f9 scuri della scena diventano pi\u00f9 scuri e profondi.",
+  "Hue": "Tonalit\u00e0",
+  "HueHint": "Scegli una tonalit\u00e0 (colore) da mescolare all'intera scena. Per attivare il cursore del colore, devi avere un'intensit\u00e0 maggiore di 0.",
+  "Intensity": "Intensit\u00e0 Tonalit\u00e0",
+  "IntensityHint": "Regola l'intensit\u00e0 con cui la tonalit\u00e0 scelta viene mescolata nella scena. Un'alta intensit\u00e0 di tonalit\u00e0 satura la scena con il colore, sovrastando eventuali colori esistenti. Una bassa intensit\u00e0 di tonalit\u00e0 mescola il colore scelto in modo pi\u00f9 sottile.",
+  "ResetEnvironment": "Ripristina Opzioni Predefinite",
+  "EnableCycling": "Abilita Ciclo",
+  "EnableCyclingHint": "Quando questa opzione \u00e8 deselezionata, viene applicata solo l'ambiente di base, senza mescolare i valori tra base e oscurit\u00e0 in base al livello di oscurit\u00e0.",
+  "BaseAmbience": "Ambiente di Base",
+  "DarkAmbience": "Ambiente Scuro",
+  "DarknessLock": "Blocco Livello Oscurit\u00e0",
+  "DarknessLockHint": "Quando questa opzione \u00e8 selezionata, il livello di oscurit\u00e0 non pu\u00f2 essere modificato."
+},
+
+"GRID.STYLES":{
+  "SolidLines": "Linee Continue",
+  "DashedLines": "Linee Tratteggiate",
+  "DottedLines": "Linee Punteggiate",
+  "SquarePoints": "Punti Quadrati",
+  "DiamondPoints": "Punti a Diamante",
+  "RoundPoints": "Punti Rotondi"
+},
 
 "SETTINGS.Configure": "Impostazioni",
 "SETTINGS.CombatConfigN": "Combattimento",
@@ -1391,6 +1685,20 @@
 "SETTINGS.EnableHighlightDocumentMatchesH": "Abilita le corrispondenze dei collegamenti di contenuto quando si evidenzia il testo nell'editor ProseMirror. Quando abilitato, il testo evidenziato verrà controllato per i documenti corrispondenti nel mondo o in qualsiasi pacchetto di compendio e offerto come link di sostituzione.",
 "SETTINGS.ReloadPromptTitle": "Ricarica Applicazione?",
 "SETTINGS.ReloadPromptBody": "Alcune delle impostazioni modificate richiedono un ricaricamento dell'applicazione per avere effetto. Vuoi ricaricare ora?",
+"SETTINGS.GridDiagonalsN": "Diagonali griglia quadrata",
+"SETTINGS.GridDiagonalsL": "Configura come viene misurata la distanza diagonale sulle griglie quadrate. Il numero tra parentesi definisce la lunghezza delle diagonali in unit\u00e0 di spazi di griglia per ogni opzione.",
+"SETTINGS.GridDiagonalsEquidistant": "Equidistante (1)",
+"SETTINGS.GridDiagonalsExact": "Esatta (\u221a2)",
+"SETTINGS.GridDiagonalsApproximate": "Approssimata (1.5)",
+"SETTINGS.GridDiagonalsRectilinear": "Rettilinea (2)",
+"SETTINGS.GridDiagonalsAlternating1": "Alternata (1\/2\/1)",
+"SETTINGS.GridDiagonalsAlternating2": "Alternata (2\/1\/2)",
+"SETTINGS.GridDiagonalsIllegal": "Illegale (\u221e)",
+"SETTINGS.ColorSchemeN": "Schema di colori preferito",
+"SETTINGS.ColorSchemeH": "Specifica se preferisci che gli elementi dell'interfaccia utente vengano visualizzati utilizzando un tema chiaro o un tema scuro. Non tutti gli elementi dell'interfaccia supportano questa preferenza.",
+"SETTINGS.ColorSchemeDefault": "Predefinito del browser",
+"SETTINGS.ColorSchemeDark": "Scuro",
+"SETTINGS.ColorSchemeLight": "Chiaro",
 
 "SETUP.NavLabel": "Impostazione Schede Configurazione",
 "SETUP.CoreVersion": "Versione Software Principale",
@@ -1413,7 +1721,10 @@
 "SETUP.Update": "Aggiorna Software",
 "SETUP.UpdateNewGeneration": "Richiesta Installazione Manuale",
 "SETUP.UpdateNewGenerationHint": "Prendi in considerazione la possibilità di creare un'istantanea di tutti i pacchetti installati prima dell'aggiornamento nel caso in cui sia necessario eseguire un roll-back.",
-"SETUP.CheckCompatibility": "Verifica Compatibilità",
+"SETUP.UpdatePreviewCompatibilityHint": "Using the 'preview compatibility' button below, you can check if all your Worlds, Systems, and Modules are supported in Foundry Virtual Tabletop Version {version}.",
+"SETUP.PreviewCompatibility": "Compatibilit\u00e0 Anteprima",
+"SETUP.PreviewCompatibilityVersion": "Compatibilit\u00e0 Anteprima con {version}",
+"SETUP.PreviewingCompatibility": "Anteprima della Compatibilit\u00e0",
 "SETUP.SystemUpdate": "Aggiorna Sistema",
 "SETUP.CoreUpdateInstructions": "È disponibile un aggiornamento del software principale, torna alla configurazione iniziale per applicarlo!",
 "SETUP.SystemUpdateInstructions": "È disponibile un aggiornamento del sistema, torna alla configurazione iniziale per applicarlo!",
@@ -1450,6 +1761,8 @@
 "SETUP.RequireSystem": "Richiede il Sistema: {system}",
 "SETUP.RequireDep": "Richiede le Dipendenze: {dependencies}",
 "SETUP.IncompatibleDep": "Dipendenze Incompatibili: {dependencies}",
+"SETUP.IncompatibleSystems": "Incompatible Systems: {systems}",
+"SETUP.NoSupportedSystem": "Nessun sistema supportato installato",
 "SETUP.RequireCoreUpgrade": "Richiede Aggiornamento Principale",
 "SETUP.RequireCoreUnstable": "Richiede Versione Instabile",
 "SETUP.RequireCoreDowngrade": "Versione Core Non Supportata",
@@ -1510,8 +1823,13 @@
 "SETUP.PackageVisAll": "Tutti i Pacchetti",
 "SETUP.PackageVisInst": "Installato",
 "SETUP.PackageVisUnin": "Non Installato",
+"SETUP.PackageVisCompatible": "Compatible",
+"SETUP.PackageVisIncompatible": "Incompatible",
+"SETUP.PackageVisUnverified": "Non Verificati",
 "SETUP.PremiumContent": "Contenuti Premium",
 "SETUP.ExclusiveContent": "Contenuti Esclusivi",
+"SETUP.ViewPackagePage": "Visualizza Pagina del Pacchetto",
+"SETUP.ViewPackageChangelog": "Visualizza Registro delle Modifiche del Pacchetto",
 
 "SETUP.PackageHasDependenciesSingular": "{title} ha una dipendenza che non è ancora installata.",
 "SETUP.PackageHasDependenciesPlural": "{title} ha {number} dipendenze non ancora installate.",
@@ -1529,7 +1847,7 @@
 "SETUP.PackageDependenciesCouldInstallPlural": "{number} dipendenze possono essere installate automaticamente.",
 "SETUP.PackageDependenciesDecline": "Hai scelto di non installare i pacchetti di dipendenze richiesti per {title}. Dovrai installarli manualmente.",
 "SETUP.PackageDependenciesSuccess": "{title} e {number} dipendenze sono stati installati con successo.",
-"SETUP.PackageUpdateCoreUpdateNeeded": "È  disponibile un aggiornamento per {id} ma non può essere installato perché richiede che il software principale sia aggiornato almeno alla versione {vmin}. Attualmente stai utilizzando la versione {vcur}.",
+"SETUP.PackageUpdateCoreUpdateNeeded": "An update is available for {id} but cannot be installed because it requires the core software to be updated to at least {vmin}. You are currently using version {vcur}.",
 "SETUP.PackageUpdateCoreUnstable": "È disponibile un aggiornamento per {id} ma potrebbe non essere installato perché richiede una versione software principale {vmin} che non è ancora stabile.",
 "SETUP.PackageUpdateCoreInsufficient": "È disponibile un aggiornamento, ma richiede una versione del core software {vmax} precedente per funzionare.",
 "SETUP.PackageDeleteTitle": "Elimina {type}: {title}",
@@ -1552,10 +1870,15 @@
 "SETUP.PackageProgressCleanup": "Pulizia Pacchetto",
 "SETUP.PackageProgressComplete": "Installazione Pacchetto Completata",
 "SETUP.PackageProgressError": "Errore",
+"SETUP.PackageIncompatibleSystemsPrompt": "Questo aggiornamento del modulo non \u00e8 compatibile con i seguenti sistemi installati, desideri continuare?",
+"SETUP.PackageIncompatibleSystemsBulkPrompt": "I seguenti moduli non sono stati aggiornati perch\u00e9 ci\u00f2 li avrebbe resi incompatibili con uno o pi\u00f9 sistemi installati. Vuoi comunque aggiornarli?",
+"SETUP.PackageIncompatibleWithSystems": "{module} <em>incompatibile con<\/em> {systems}",
 "SETUP.ConfirmCodeLabel": "Digita '{code}' correttamente per procedere",
 
 "SETUP.WorldLaunchConnect": "Caricamento Dati Mondo",
+"SETUP.WorldLaunchMigrate": "Migrazione Dati del Mondo",
 "SETUP.WorldLaunchConnectPackage": "Caricamento Dati Package",
+"SETUP.WorldLaunchMigratePackage": "Migrazione Dati del Pacchetto",
 "SETUP.WorldLaunchMigrateCore": "Esecuzione Migrazioni di Base",
 "SETUP.WorldLaunchMigrateSystem": "Esecuzione Migrazioni Sistema",
 
@@ -1625,8 +1948,8 @@
 "SETUP.SSLKeyLabel": "Chiave",
 "SETUP.Telemetry": "Condividi Dati di Utilizzo",
 "SETUP.TelemetryHint": "Consenti la condivisione con noi dei dati di utilizzo che ci aiutano a migliorare Foundry Virtual Tabletop. I dati raccolti se questa opzione è abilitata sono documentati nella nostra<a href=\"https://foundryvtt.com/article/privacy-policy/\" target=\"_blank\">Informativa sulla privacy</a> , non contengono alcuna informazione personale e non sono condivisi con nessuno. La condivisione dei dati di utilizzo ci aiuta a rispondere a domande come \"quali versioni del software Foundry Virtual Tabletop sono più utilizzate\", \"quali sistemi di gioco sono più giocati\" e \"quali versioni del modulo sono installate più frequentemente\". Utilizziamo le informazioni provenienti da questi dati per aiutarci a migliorare la compatibilità del software, fornire un'assistenza clienti migliore e condividere informazioni aggregate con la nostra comunità. Se questa opzione è disabilitata, nessun dato verrà condiviso.",
-"SETUP.TelemetryRequestTitle": "Consentire la Condivisione dei Dati di Utilizzo?",
-"SETUP.TelemetryRequest1": "Foundry Virtual Tabletop Version 11 aggiunge la possibilità di raccogliere, solo con il tuo permesso, dati di utilizzo anonimi che ci aiutano a migliorare la piattaforma.",
+"SETUP.TelemetryRequestTitle": "Consenti la Condivisione dei Dati di Utilizzo?",
+"SETUP.TelemetryRequest1": "Foundry Virtual Tabletop Version 11 aggiunge la possibilit\u00e0 di raccogliere, solo con il tuo permesso, dati di utilizzo anonimi che ci aiutano a migliorare la piattaforma.",
 "SETUP.TelemetryRequest2": "Questa richiesta verrà visualizzata solo una volta, è possibile modificare le preferenze relative alla condivisione dei dati di utilizzo in qualsiasi momento nel menu Configurazione Applicazione facendo clic sull'icona <i class=\"fas fa-cogs\"></i> In alto a destra di questa schermata.",
 "SETUP.TelemetryAllow": "Consenti Condivisione",
 "SETUP.TelemetryDecline": "Rifiuta Condivisione",
@@ -1660,14 +1983,14 @@
 "SETUP.BACKUPS.DeleteBackupFailure": "Impossibile eliminare i backup per il pacchetto '{title}'. Consultare la console (F12) per i dettagli.",
 "SETUP.BACKUPS.DeleteBackupTitle": "Eliminazione dei backup per {title}",
 "SETUP.BACKUPS.DeleteBackupWarning": "L'eliminazione di un backup non può essere annullata. Vuoi continuare?",
-"SETUP.BACKUPS.DeleteBackupWarningPl": "<strong>{count}</strong> backup sono stati selezionati per l'eliminazione. Questa azione non può essere annullata. Vuoi continuare?",
+"SETUP.BACKUPS.DeleteBackupWarningPl": "Sono stati selezionati <strong>{count}</strong> backup per l'eliminazione. Questa azione non può essere annullata. Vuoi continuare?",
 "SETUP.BACKUPS.DeletingSnapshot": "Eliminazione istantanee",
 "SETUP.BACKUPS.DeleteSnapshotComplete": "Istantanea eliminata.",
 "SETUP.BACKUPS.DeleteSnapshotCompletePl": "Eliminate {count} istantanee.",
 "SETUP.BACKUPS.DeleteSnapshotFailure": "Impossibile eliminare una o più istantanee. Consultare la console (F12) per i dettagli.",
 "SETUP.BACKUPS.DeleteSnapshotTitle": "Eliminazione istantanee",
 "SETUP.BACKUPS.DeleteSnapshotWarning": "L'eliminazione di un'istantanea non può essere annullata. Vuoi continuare?",
-"SETUP.BACKUPS.DeleteSnapshotWarningPl": "<strong>{count}</strong>istantanee sono state selezionate per l'eliminazione. Questa azione non può essere annullata. Vuoi continuare?",
+"SETUP.BACKUPS.DeleteSnapshotWarningPl": "Sono state selezionate <strong>{count}</strong>istantanee per l'eliminazione. Questa azione non può essere annullata. Vuoi continuare?",
 "SETUP.BACKUPS.NoteHint": "Inserisci una eventuale nota di riferimento.",
 "SETUP.BACKUPS.DiskSpace": "Spazio Disco",
 "SETUP.BACKUPS.DiskSpaceAvailable": "{available} disponibili",
@@ -1693,8 +2016,8 @@
 "SETUP.BACKUPS.RestoreSnapshotComplete": "Istantanea ripristinata con successo fatta in data {date}.",
 "SETUP.BACKUPS.RestoreSnapshotTitle": "Ripristina istantanea",
 "SETUP.BACKUPS.RestoreSnapshotWarning": "Il ripristino di un'istantanea riporta lo stato dell'installazione di Foundry VTT a quello in cui è stata creata l'istantanea. Saranno eseguiti i roll back di tutte le versioni e gli stati del mondo. Questo processo non può essere annullato.",
-"SETUP.BACKUPS.RestoreSnapshotUnchangedPackages": "<strong>1</strong> pacchetto è stato aggiunto dopo che l'istantanea è stata creata e rimarrà invariato dopo il ripristino dell'istantanea.",
-"SETUP.BACKUPS.RestoreSnapshotUnchangedPackagesPl": "<strong>{count}</strong> pacchetti sono stati aggiunti dopo che l'istantanea è stata creata e rimarranno invariati dopo il ripristino dell'istantanea.",
+"SETUP.BACKUPS.RestoreSnapshotUnchangedPackages": "E' stato aggiunto <strong>1</strong> pacchetto dopo la creazione dell'istantanea e rimarrà invariato dopo il suo ripristino.",
+"SETUP.BACKUPS.RestoreSnapshotUnchangedPackagesPl": "Sono stati aggiunti <strong>{count}</strong> pacchetti dopo la creazione dell'istantanea e rimarranno invariati dopo il suo ripristino.",
 "SETUP.BACKUPS.Snapshot": "Istantanea",
 "SETUP.BACKUPS.TakeBackup": "Esegui il Backup",
 "SETUP.BACKUPS.VersionFormat": "Versione {version}",
@@ -1714,6 +2037,22 @@
 "SETUP.BACKUPS.Snapshotting.system": "Creazione Istantanee Sistemi",
 "SETUP.BACKUPS.CannotRestoreUnusable": "Questo backup non può essere ripristinato in quanto renderebbe il pacchetto inutilizzabile.",
 
+"SETUP.COMPAT.Compatible": "{count} Compatible",
+"SETUP.COMPAT.CompatibleTooltip": "Packages that are verified as compatible with version {version}.",
+"SETUP.COMPAT.Incompatible": "{count} Incompatible",
+"SETUP.COMPAT.IncompatibleTooltip": "Packages that are verified as incompatible with version {version}.",
+"SETUP.COMPAT.Warning": "{count} Compatibility Risk",
+"SETUP.COMPAT.WarningTooltip": "Packages that were last verified as compatible with an earlier generation and may not be compatible with version {version}.",
+"SETUP.COMPAT.Unverified": "{count} Unverified",
+"SETUP.COMPAT.UnverifiedTooltip": "Packages that were last verified as compatible with an earlier build and are likely still compatible with version {version}.",
+"SETUP.COMPAT.LearnMore": "Learn more about this tool",
+"SETUP.COMPAT.INCOMPATIBLE.Latest": "The latest version of this package is not compatible with the {version} update",
+"SETUP.COMPAT.INCOMPATIBLE.World": "There is no compatible version of this world's system available for the {version} update",
+"SETUP.COMPAT.COMPATIBLE.Latest": "The latest version of this package is compatible with the {version} update",
+"SETUP.COMPAT.COMPATIBLE.World": "This world's system has a compatible version available for the {version} update",
+"SETUP.COMPAT.RISK.Latest": "The latest version of this package was last verified for core software version {verified}",
+"SETUP.COMPAT.RISK.World": "This world's system was last verified for core software version {verified}",
+
 "THEME.foundry": "Foundry Virtual Tabletop",
 "THEME.fantasy": "Classic Fantasy",
 "THEME.scifi": "Science Fiction",
@@ -1724,6 +2063,7 @@
 "PACKAGE.Type.systemPl": "Sistemi",
 "PACKAGE.Type.module": "Modulo",
 "PACKAGE.Type.modulePl": "Modulil",
+"PACKAGE.Type.allPl": "All",
 
 "PACKAGE.Id": "Identificativo Pacchetto",
 "PACKAGE.IdHint": "L'identificativo deve essere una stringa alfanumerica univoca senza caratteri speciali a parte i trattini.",
@@ -1814,20 +2154,23 @@
 "PACKAGECONFIG.Core": "Principale",
 "PACKAGECONFIG.Unmapped": "Non Mappato",
 
-"JOIN.CurrentPlayers": "Giocatori Collegati",
-"JOIN.HeaderJoin": "Partecipa alla Sessione di Gioco",
-"JOIN.HeaderDetails": "Dettagli Gioco",
-"JOIN.HeaderWorld": "Descrizione Mondo",
-"JOIN.NextSession": "Prossima Sessione",
-"JOIN.SelectUser": "Seleziona Utente",
-"JOIN.UserKey": "Password Utente",
-"JOIN.AuthAdmin": "Sei autenticato come utente amministratore del server.",
+"JOIN": {
+"CurrentPlayers": "Giocatori Attuali",
+"HeaderJoin": "Unisciti alla Sessione",
+"HeaderDetails": "Dettagli",
+"HeaderWorld": "Descrizione",
+"NextSession": "Prossima Sessione",
+"SelectUser": "Seleziona Utente",
+"UserKey": "Password Utente",
+"AuthAdmin": "Sei autenticato come utente amministratore del server.",
+"ErrorMustSelectUser": "Devi selezionare un utente per effettuare l'accesso.",
+"ErrorUserDoesNotExist": "L'utente richiesto, \"{user}\", non esiste!",
+"ErrorInvalidPassword": "Password non valida fornita per {user}!",
+"ErrorBanned": "{user} non ha il permesso di accedere a questo Mondo!",
+"LoginSuccess": "Accesso come {user} riuscito, inziamo!"
+},
 
-"JOIN.ErrorUserDoesNotExist": "L'utente richiesto, \"{user}\", non esiste!",
-"JOIN.ErrorInvalidPassword": "La password fornita per {utente} non valida!",
-"JOIN.ErrorBanned": "{user} non ha il permesso di accedere a questo mondo!",
-"JOIN.LoginSuccess": "Accesso come {user} riuscito, unisciti al gioco!",
-
+"SHEETS.ConfigureSheet": "Configura Scheda",
 "SHEETS.ThisSheet": "Questa Scheda",
 "SHEETS.DefaultSheet": "Scheda Predefinita",
 "SHEETS.DefaultDocumentSheet": "Scheda {document} predefinita",
@@ -1836,23 +2179,18 @@
 "SHEETS.DocumentSheetPrivate": "Non hai autorizzazioni sufficienti per visualizzare la scheda per questo {tipo}.",
 "SHEETS.Save": "Salva Configurazione Scheda",
 "SHEETS.FormNavLabel": "Navigazione Scheda Modulo",
+"SHEETS.CopyUuid": "Copia UUID Documento",
 
-"SOUND.ConfigTitle": "Configurazione del Suono Ambientale",
-"SOUND.ConfigHint": "Configura il suono ambientale per riprodurre un file audio quando i token si spostano all'interno del suo raggio.",
-"SOUND.Create": "Crea Suono Ambientale",
-"SOUND.Update": "Aggiorna Souno Abientale",
-"SOUND.SourcePath": "Percorso File",
-"SOUND.PathPlaceholder": "percorso/a/audio.mp3",
-"SOUND.Radius": "Raggio dell'Effetto",
-"SOUND.Easing": "Riduzione del Volume",
-"SOUND.EasingHint": "Imposta il livello del volume del suono quando i token si avvicinano all'origine.",
-"SOUND.MaxVol": "Volume Massimo",
-"SOUND.MaxVolHint": "Definisci il volume massimo del suono nel suo punto di origine (se viene usata la riduzione) oppure ovunque all'interno dell'area.",
-"SOUND.New": "Nuovo Suono",
-"SOUND.DarknessRange": "Gamma Attivazione Oscurità",
-"SOUND.DarknessRangeHint": "Specificare una gamma di livelli di oscurità durante la quale questo suono ambientale sarà udibile.",
-"SOUND.Walls": "Vincolata da Mura",
-"SOUND.WallsHint": "Configura se l'area d'effetto per questa sorgente d'audio è vincolata dai muri vicini.",
+"SOUND": {
+  "ConfigTitle": "Configurazione Suono Ambientale",
+  "PathPlaceholder": "percorso\/per\/audio.mp3",
+  "New": "Nuovo Suono",
+  "EFFECTS": {
+      "LOWPASS": "Filtro Passa Basso",
+      "HIGHPASS": "Filtro Passa Alto",
+      "REVERB": "Riverbero"
+  }
+},
 
 "FOLDER.Clear": "Cancella Cartella",
 "FOLDER.Color": "Colore Cartella",
@@ -1901,6 +2239,7 @@
 "OWNERSHIP.HintFolder": "Configura l'accesso per tutti i Documenti all'interno di questa cartella. Le modifiche verranno applicate a tutti i Documenti contenuti, escluso il contenuto delle sottocartelle.",
 "OWNERSHIP.HintDocument": "Configura l'accesso a questo specifico Documento, consentendo a ciascun Utente di essere assegnato un diverso livello di visibilità.",
 "OWNERSHIP.Configure": "Configura Appartenenza",
+"OWNERSHIP.ShowGM": "Mostra Utenti GM",
 
 "PERMISSION.Title": "Configurazione Autorizzazione Utente",
 "PERMISSION.Configure": "Config. Autorizzazioni",
@@ -1937,6 +2276,8 @@
 "PERMISSION.NoteCreateHint": "Consenti agli utenti con questo ruolo di creare oggetti Nota dalle voci del diario di cui sono proprietari.",
 "PERMISSION.PingCanvas": "Canvas Pings",
 "PERMISSION.PingCanvasHint": "Consenti agli utenti con questo ruolo di attirare l'attenzione su un punto del canvas con un ping animato",
+"PERMISSION.PlaylistCreate": "Crea Playlist",
+"PERMISSION.PlaylistCreateHint": "Consenti agli Utenti con questo ruolo di creare nuove playlist nel Mondo.",
 "PERMISSION.SettingsModify": "Modifica Impostazioni di Configurazione",
 "PERMISSION.SettingsModifyHint": "Consenti agli utenti con questo ruolo di modificare le impostazioni di gioco e abilitare o disabilitare i moduli.",
 "PERMISSION.ShowCursor": "Visualizza Cursore del Mouse",
@@ -1955,8 +2296,247 @@
 "PERMISSION.WallDoorsHint": "Consenti agli utenti con questo ruolo di interagire con le porte definite sul livello pareti.",
 "PERMISSION.WarningNoCreate": "Non disponi di autorizzazioni sufficienti per creare un documento di tipo  {document}.",
 
+"REGION": {
+  "SECTIONS": {
+      "identity": "Identità",
+      "shapes": "Forme",
+      "behaviors": "Comportamenti"
+  },
+  "FIELDS": {
+    "color": {
+      "label": "Colore",
+      "hint": "Il colore applicato alla visualizzazione della Regione."
+    },
+    "shapes": {
+      "label": "Forme",
+      "hint": "Le forme della Regione."
+    },
+    "elevation": {
+      "label": "Elevazione",
+      "hint": "La gamma di elevazione della Regione.",
+      "FIELDS": {
+        "bottom": {
+            "label": "Fondo",
+            "hint": "Il fondo della gamma di elevazione."
+        },
+        "top": {
+            "label": "Cima",
+            "hint": "La cima della gamma di elevazione."
+        }
+      }
+    },
+    "behaviors": {
+      "label": "Comportamenti",
+      "hint": "I comportamenti della Regione."
+    },
+    "visibility": {
+      "label": "Visibilit\u00e0",
+      "hint": "Configura la visibilit\u00e0 della Regione."
+    }
+  },
+  "ACTIONS": {
+    "create": "Crea Regione",
+    "update": "Aggiorna Regione",
+    "delete": "Elimina Regione",
+    "shapeCreateFromWalls": "Crea Forme da Pareti Controllate",
+    "shapeMakeHole": "Crea Buco",
+    "shapeFillHole": "Riempi Buco",
+    "shapeMoveUp": "Sposta Forma in Alto",
+    "shapeMoveDown": "Sposta Forma in Basso",
+    "shapeRemove": "Rimuovi Forma",
+    "behaviorCreate": "Crea Comportamento",
+    "behaviorEdit": "Modifica Comportamento",
+    "behaviorDelete": "Elimina Comportamento",
+    "behaviorEnable": "Abilita Comportamento",
+    "behaviorDisable": "Disabilita Comportamento"
+  },
+  "VISIBILITY": {
+    "LAYER": {
+      "label": "Solo sul Livello della Regione"
+    },
+    "GAMEMASTER": {
+      "label": "Sempre per il Game Master"
+    },
+    "ALWAYS": {
+      "label": "Sempre per Chiunque"
+    }
+  },
+  "EVENTS": {
+    "regionBoundary": {
+      "label": "Confine della Regione Modificato"
+    },
+    "behaviorStatus": {
+      "label": "Stato del Comportamento Modificato"
+    },
+    "tokenEnter": {
+      "label": "Token Entra"
+    },
+    "tokenExit": {
+      "label": "Token Esce"
+    },
+    "tokenPreMove": {
+      "label": "Prima del Movimento del Token"
+    },
+    "tokenMove": {
+      "label": "Dopo il Movimento del Token"
+    },
+    "tokenMoveIn": {
+      "label": "Token Spostato Dentro"
+    },
+    "tokenMoveOut": {
+      "label": "Token Spostato Fuori"
+    },
+    "tokenTurnStart": {
+      "label": "Token Inizia il Turno"
+    },
+    "tokenTurnEnd": {
+      "label": "Token Termina il Turno"
+    },
+    "tokenRoundStart": {
+      "label": "Token Inizia il Round"
+    },
+    "tokenRoundEnd": {
+      "label": "Token Termina il Round"
+    }
+  },
+  "SHAPES": {
+    "rectangle": "Rettangolo",
+    "circle": "Cerchio",
+    "ellipse": "Ellisse",
+    "polygon": "Poligono"
+  },
+  "Behavior": "Comportamento",
+  "Shape": "Forma",
+  "LEGEND": {
+    "control": "Controlla Regione",
+    "config": "Configura Regione",
+    "create": "Crea Regione",
+    "delete": "Elimina Regione",
+    "empty": "Vuoto",
+    "filter": "Filtra Regioni",
+    "lock": "Blocca Regione",
+    "title": "Legenda Regione",
+    "unlock": "Sblocca Regione",
+    "elevationBottom": "Elevazione (Fondo)",
+    "elevationTop": "Elevazione (Cima)"
+  },
+  "SHEET": {
+    "title": "Configura Regione"
+  },
+  "NOTIFICATIONS": {
+    "ControlWalls": "Controlla un gruppo di pareti che definiscono il confine della forma desiderata.",
+    "DrawingMultipleRegionsControlled": "Devi controllare una sola o nessuna Regione quando disegni una forma!",
+    "EmptyEnclosedArea": "L'area racchiusa dalle Pareti controllate \u00e8 vuota! Assicurati che le Pareti esterne formino un loop chiuso e siano collegate estremit\u00e0 a estremit\u00e0.",
+    "NoControlledWalls": "Non stai controllando nessuna Paretile!"
+  }
+},
+
+"BEHAVIOR": {
+  "SECTIONS": {
+    "identity": "Identit\u00e0 Comportamento",
+    "status": "Stato Comportamento"
+  },
+  "FIELDS": {
+    "disabled": {
+      "label": "Disabilitato",
+      "hint": "Attiva o disattiva temporaneamente questo comportamento."
+    }
+  },
+  "ACTIONS": {
+    "create": "Crea Comportamento Regione",
+    "update": "Aggiorna Comportamento Regione",
+    "delete": "Elimina Comportamento Regione"
+  },
+  "TYPES": {
+    "base": {
+      "SECTIONS": {
+        "events": "Eventi Sottoscritti"
+      },
+      "FIELDS": {
+        "events": {
+          "label": "Eventi",
+          "hint": "Gli eventi a cui questo comportamento si sottoscrive."
+        }
+      }
+    },
+    "adjustDarknessLevel": {
+      "FIELDS": {
+        "mode": {
+          "label": "Modalit\u00e0",
+          "hint": "Come il livello di oscurit\u00e0 viene modificato all'interno di questa regione. Questo comportamento rispetta la soglia di illuminazione globale della scena. Se il livello di oscurit\u00e0 totale di un'area supera il valore di soglia, allora l'illuminazione globale viene impedita in quella area."
+        },
+        "modifier": {
+          "label": "Modificatore",
+          "hint": "Un modificatore numerico che si applica al livello di oscurit\u00e0 in base alla modalit\u00e0."
+        },
+        "blur": {
+          "label": "Sfocatura",
+          "hint": "I livelli di oscurit\u00e0 devono transire gradualmente al confine di questa forma o cambiare immediatamente?"
+        }
+      },
+      "MODES": {
+        "OVERRIDE": {
+                    "label": "Sovrascrivi"
+        },
+        "BRIGHTEN": {
+                    "label": "Schiarisci"
+        },
+        "DARKEN": {
+          "label": "Scurisci"
+        }
+      }
+    },
+    "executeMacro": {
+      "FIELDS": {
+        "uuid": {
+          "label": "Macro",
+          "hint": "La macro che viene eseguita quando si verifica uno degli eventi."
+        }
+      }
+    },
+    "executeScript": {
+      "FIELDS": {
+        "source": {
+          "label": "Script",
+          "hint": "Lo script che viene eseguito quando si verifica uno degli eventi."
+        }
+      }
+    },
+    "pauseGame": {
+      "FIELDS": {
+        "once": {
+          "label": "Una volta",
+          "hint": "Disabilita il comportamento una volta che un Token controllato dal giocatore entra nella regione."
+        }
+      }
+    },
+    "teleportToken": {
+      "FIELDS": {
+        "destination": {
+          "label": "Destinazione",
+          "hint": "La regione di destinazione in cui il Token viene teletrasportato una volta che entra nella regione."
+        }
+      }
+    },
+    "toggleBehavior": {
+      "FIELDS": {
+        "enable": {
+          "label": "Abilita Comportamenti",
+          "hint": "I comportamenti che vengono abilitati quando si verifica uno degli eventi."
+        },
+        "disable": {
+          "label": "Disabilita Comportamenti",
+          "hint": "I comportamenti che vengono disabilitati quando si verifica uno degli eventi."
+        }
+      }
+    }
+  }
+},
+
 "RULER.MovementNotAllowed": "La misura del percorso di movimento non è consentita",
 "RULER.MovementCollision": "Il movimento si scontra con almeno un muro.",
+"RULER.MovementNoPermission": "Non hai il permesso di spostare questo Token.",
+"RULER.MovementLocked": "Questo Token non pu\u00f2 essere spostato perch\u00e9 \u00e8 bloccato.",
 
 "SIDEBAR.Import": "Importa Dati",
 "SIDEBAR.NavLabel": "Schede Barra Laterale",
@@ -1995,6 +2575,7 @@
 "SUPPORT.Client": "Client",
 "SUPPORT.GPU": "GPU",
 "SUPPORT.MaxTextureSize": "Dimensione Mass. Texture",
+"SUPPORT.LargestTexture": "Texture Pi\u00f9 Grande",
 "SUPPORT.NoViewedScene": "Nessuna scena visualizzata",
 "SUPPORT.DocumentIssues": "Problemi sui Documenti",
 "SUPPORT.ClientIssues": "Problemi sul Client",
@@ -2002,6 +2583,12 @@
 "SUPPORT.ModuleSubTypesUnavailableName": "<strong>{count}</strong> {document} non sono disponibili perché il modulo '{name}' è inattivo",
 "SUPPORT.ModuleSubTypesUnavailableNoName": "<strong>{count}</strong> {document} non sono disponibili perché il modulo con l'ID '{nome}' è inattivo",
 "SUPPORT.UnavailableDocuments": "{Count} documenti {documento} non disponibili",
+"SUPPORT.WorldScripts": "Script del Mondo",
+"SUPPORT.GenerateFullReport": "Genera Report Completo",
+"SUPPORT.GenerateFullReportHint": "Un report completo contiene informazioni pi\u00f9 dettagliate sui moduli e sui compendi installati e pu\u00f2 richiedere del tempo per essere generato.",
+"SUPPORT.WorldData": "Dati del Mondo",
+"SUPPORT.CompendiumData": "Dati del Compendio",
+"SUPPORT.ActiveModules": "Moduli Attivi",
 
 "TABLE.AnimateSetting": "Animare le Tabelle Dinamiche",
 "TABLE.AnimateSettingHint": "Visualizza un'animazione in stile roulette quando mostri un risultato da una Tabella.",
@@ -2015,6 +2602,7 @@
 "TABLE.Normalize": "Normalizza i pesi dei risultati",
 "TABLE.Replacement": "Mostra sostituzione?",
 "TABLE.Reset": "Ripristina",
+"TABLE.Result": "Risultato",
 "TABLE.ResultCreate": "Aggiungi Risultato",
 "TABLE.ResultType": "Tipo Risultato",
 "TABLE.ResultDetails": "Dettaglio Risultato",
@@ -2025,6 +2613,9 @@
 "TABLE.Roll": "Tiro",
 "TABLE.ToggleDrawn": "Attiva/disattiva stato visualizzato",
 "TABLE.Update": "Aggiorna",
+"TABLE.RESULT_TYPES.TEXT.label": "Testo",
+"TABLE.RESULT_TYPES.DOCUMENT.label": "Documento",
+"TABLE.RESULT_TYPES.COMPENDIUM.label": "Compendio",
 
 "TEMPLATE.BorderColor": "Colore Bordo",
 "TEMPLATE.ConeTypeSetting": "Modelli di Cono",
@@ -2036,6 +2627,9 @@
 "TEMPLATE.FillTexture": "Texture Riempimento",
 "TEMPLATE.SubmitCreate": "Create Measured Template",
 "TEMPLATE.SubmitUpdate": "Aggiorna Modello di Misurazione",
+"TEMPLATE.GridTemplatesSetting": "Forme dei Modelli basate sulla Griglia",
+"TEMPLATE.GridTemplatesSettingHint": "Configura se l'area di effetto dei modelli deve essere basata sulla griglia invece che euclidea.",
+
 
 "TILE.ConfigTitle": "Configurazione Tile",
 "TILE.SubmitCreate": "Crea Tile",
@@ -2053,8 +2647,10 @@
 "TILE.ScaleHint": "Regola la scala dell'immagine sull'asse X o Y. L'immagine potrebbe essere più grande del suo riquadro di delimitazione. I valori negativi capovolgeranno l'immagine.",
 "TILE.ScaleX": "Orizzontale",
 "TILE.ScaleY": "Verticale",
-"TILE.Overhead": "E' Overhead?",
-"TILE.Roof": "E' un Tetto?",
+"TILE.RestrictsLight": "Limita Luce",
+"TILE.RestrictsWeather": "Limita Meteo",
+"TILE.RestrictsLightHint": "Le fonti di luce sono bloccate in base alla loro elevazione rispetto all'elevazione di questo Riquadro?",
+"TILE.RestrictsWeatherHint": "Gli effetti meteorologici sono bloccati in base alla loro elevazione rispetto all'elevazione di questo Riquadro?",
 "TILE.OcclusionMode": "Tipo Occlusione",
 "TILE.OcclusionModeNone": "Nessuna (Sempre Visibile)",
 "TILE.OcclusionModeFade": "Dissolvenza (Tutto il Tile)",
@@ -2083,7 +2679,7 @@
 "TOKEN.HeaderResources": "Risorse",
 
 "TOKEN.Assign": "Assegna Token",
-"TOKEN.AssignWarn": "È necessario selezionare un token esistente da assegnare come nuova configurazione del prototipo.",
+"TOKEN.AssignWarn": "È' necessario selezionare un token esistente da assegnare come nuova configurazione del prototipo.",
 "TOKEN.AssignSuccess": "La configurazione del token prototipo è stata aggiornata per {name}",
 "TOKEN.BarAttributes": "Barra degli Attributi",
 "TOKEN.BarValues": "Valori Singoli",
@@ -2094,9 +2690,14 @@
 "TOKEN.Coordinates": "Coordinate",
 "TOKEN.Disposition": "Atteggiamento Token",
 "TOKEN.Dimensions": "Dimensioni",
-"TOKEN.DimensionsHint": "Le dimensioni dei token sono arrotondate allo 0,5 più vicino allo spazio della griglia.",
+"TOKEN.DimensionsHint": "Le dimensioni dei token sono arrotondate allo 0,5 pi\u00f9 vicino allo spazio della griglia.",
+"TOKEN.HexagonalShape": "Forma Esagonale",
+"TOKEN.HexagonalShapeHint": "La forma del Token su una griglia esagonale.",
+"TOKEN.AnchorHint": "L'ancora predefinita (0,5, 0,5) \u00e8 il centro dell'immagine del Token.",
 "TOKEN.ImageAlts": "Alterna Token Del Personaggio",
 "TOKEN.ImagePath": "Percorso Immagine",
+"TOKEN.ImageFitMode": "Modalit\u00e0 Adattamento Immagine",
+"TOKEN.ImageFitModeHint": "Regola come l'immagine si adatta alle dimensioni del Token.",
 "TOKEN.LockRotation": "Blocca Rotazione",
 "TOKEN.Lock": "Blocca",
 "TOKEN.AppendNumber": "Aggiungere il numero al nome dei Token Non Collegati?",
@@ -2107,6 +2708,8 @@
 "TOKEN.MirrorX": "Orizzontalmente",
 "TOKEN.MirrorY": "Verticalmente",
 "TOKEN.Opacity": "Opacità Token",
+"TOKEN.OcclusionRadius": "Raggio di Occultamento",
+"TOKEN.OcclusionRadiusHint": "Quando questo Token \u00e8 sotto una Piastrella che utilizza occultamento radiale, questo valore controlla la dimensione del buco che viene tagliato nella Piastrella per consentire al Token di essere visto attraverso di essa.",
 "TOKEN.RandomImg": "Immagini casuali",
 "TOKEN.ResourceBar1A": "Attributo Barra 1",
 "TOKEN.ResourceBar1D": "Dati Barra 1",
@@ -2148,6 +2751,13 @@
 "TOKEN.DISPLAY_HOVER": "Mouse-over Per Tutti",
 "TOKEN.DISPLAY_OWNER": "Sempre Per il Proprietario",
 "TOKEN.DISPLAY_ALWAYS": "Sempre Per Tutti",
+
+"TOKEN.HEXAGONAL_SHAPE_ELLIPSE_1": "Ellisse (Variante 1)",
+"TOKEN.HEXAGONAL_SHAPE_ELLIPSE_2": "Ellisse (Variante 2)",
+"TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_1": "Trapezio (Variante 1)",
+"TOKEN.HEXAGONAL_SHAPE_TRAPEZOID_2": "Trapezio (Variante 2)",
+"TOKEN.HEXAGONAL_SHAPE_RECTANGLE_1": "Rettangolo (Variante 1)",
+"TOKEN.HEXAGONAL_SHAPE_RECTANGLE_2": "Rettangolo (Variante 2)",
 
 "TOKEN.Adjectives.ambitious":  "Ambizioso",
 "TOKEN.Adjectives.angry":  "Infuriato",
@@ -2258,23 +2868,78 @@
 "TOKEN.DetectionAdd": "Agg. Modalità di Rilevamento",
 "TOKEN.DetectionRemove": "Rimuovi Modalità di Rilevamento",
 
+"TOKEN.FIELDS": {
+  "ring": {
+    "colors": {
+      "ring": {
+        "label": "Colore Anello",
+        "hint": "Un colore applicato al bordo dell'anello."
+      },
+      "background": {
+        "label": "Colore di sfondo",
+        "hint": "Un colore applicato allo sfondo dell'anello."
+      }
+    },
+    "effects": {
+      "label": "Effetti Anello"
+    },
+    "enabled": {
+      "label": "Anello abilitato"
+    },
+    "subject": {
+      "scale": {
+        "label": "Correzione scala soggetto"
+      },
+      "texture": {
+        "label": "Texture soggetto",
+        "hint": "Specifica esplicitamente un percorso per l'immagine posizionata sull'anello del token dinamico. Se non viene fornito, il soggetto dell'anello \u00e8 lo stesso della texture del token standard."
+      }
+    }
+  }
+},
+
+"TOKEN.RING": {
+  "EFFECTS": {
+    "BACKGROUND_WAVE": "Onda di sfondo",
+    "RING_GRADIENT": "Gradiente dell'anello",
+    "RING_PULSE": "Pulsazione dell'anello"
+  },
+  "SHEET": {
+    "legend": "Anello Dinamico Token"
+  }
+},
+
+"TYPES.Base": "Base",
 "TYPES.Cards.deck": "Mazzo",
 "TYPES.Cards.hand": "Mano",
 "TYPES.Cards.pile": "Pila",
-"TYPES.Card.base": "Base",
 "TYPES.JournalEntryPage.image": "Immagine",
 "TYPES.JournalEntryPage.pdf": "PDF",
 "TYPES.JournalEntryPage.text": "Testo",
 "TYPES.JournalEntryPage.video": "Video",
 "TYPES.Macro.chat": "Chat",
 "TYPES.Macro.script": "Script",
+"TYPES.RegionBehavior.adjustDarknessLevel": "Regola Livello Oscurit\u00e0",
+"TYPES.RegionBehavior.executeMacro": "Esegui Macro",
+"TYPES.RegionBehavior.executeScript": "Esegui Script",
+"TYPES.RegionBehavior.pauseGame": "Metti in Pausa il Gioco",
+"TYPES.RegionBehavior.suppressWeather": "Sopprimi Meteo",
+"TYPES.RegionBehavior.teleportToken": "Teletrasporta Token",
+"TYPES.RegionBehavior.toggleBehavior": "Attiva\/Disattiva Comportamento",
 
+"DETECTION.LightPerception": "Percezione della Luce",
 "DETECTION.BasicSight": "Visione Base",
 "DETECTION.SeeInvisibility": "Visione dell'Invisibile",
 "DETECTION.SenseInvisibility": "Percezione dell'invisibile",
 "DETECTION.FeelTremor": "Percezione Tellurica",
 "DETECTION.SenseAll": "Percezione Globale",
 "DETECTION.SeeAll": "Visione Globale",
+
+"TEXTURE_DATA.FIT.fill": "Riempi",
+"TEXTURE_DATA.FIT.contain": "Contenuto",
+"TEXTURE_DATA.FIT.cover": "Copri",
+"TEXTURE_DATA.FIT.width": "Larghezza Completa",
+"TEXTURE_DATA.FIT.height": "Altezza Completa",
 
 "Tours.NavLabel": "Schede Gestione Tour",
 "TOURS.ShowMeHow": "Mostrami come",
@@ -2296,12 +2961,47 @@
 "TOURS.SuggestedTitle": "Prossimo Tour Suggerito",
 "TOURS.SuggestedDescription": "<p>Hai completato il Tour <strong>{currentTitle}</strong> .</p><p>Ti suggeriamo di continuare al tour <strong>{nextTitle}</strong> . Vorresti procedere?</p>",
 
-"USER.RoleNone": "Nessuno",
-"USER.RolePlayer": "Giocatore",
-"USER.RoleTrusted": "Giocatore Fidato",
-"USER.RoleAssistant": "Assistente DM",
-"USER.RoleGamemaster": "Dungeon Master",
-"USER.GM": "GM",
+"USER": {
+  "FIELDS": {
+    "name": {
+      "label": "Nome Giocatore",
+      "hint": "I nomi dei giocatori devono essere configurati dal Game Master e possono essere modificati nella schermata di Gestione Utenti."
+    },
+    "avatar": {
+      "label": "Avatar Giocatore",
+      "hint": "viene visualizzato un avatar del giocatore durante la chat audio\/video integrata o pu\u00f2 essere visualizzato dai moduli."
+    },
+    "color": {
+      "label": "Colore Giocatore",
+      "hint": "Il colore del giocatore viene utilizzato per cursori, righelli, modelli e altri elementi che differenziano tra gli utenti."
+    },
+    "pronouns": {
+      "label": "Pronomi Giocatore",
+      "hint": "Pronomi che indicano come questo giocatore desidera essere chiamato in terza persona."
+    },
+    "character": {
+      "label": "Personaggio Giocatore",
+      "hint": "Seleziona un Attore dal set su cui hai almeno il permesso OSSERVATORE che rappresenta il personaggio principale per questo utente."
+    }
+  },
+  "SHEET": {
+    "HEADERS": {
+      "INFO": "Informazioni Giocatore",
+      "CHAR": "Personaggio Giocatore"
+    },
+    "BUTTONS": {
+      "SAVE": "Salva Configurazione Giocatore",
+      "RELEASE": "Rilascia Personaggio"
+    }
+  },
+  "RoleNone": "Nessuno",
+  "RolePlayer": "Giocatore",
+  "RoleTrusted": "Giocatore Affidabile",
+  "RoleAssistant": "Assistente GM",
+  "RoleGamemaster": "Game Master",
+  "GM": "GM"
+},
+
 "USERS.AccessKey": "Password",
 "USERS.Role": "Ruolo Utente",
 "USERS.UserName": "Nome Utente",
@@ -2314,6 +3014,7 @@
 "USERS.NoGMError": "Devi avere almeno un utente Game Master nel tuo mondo.",
 "USERS.DeleteWarning": "Questo utente verrà eliminato definitivamente dal mondo di gioco.",
 "USERS.DeleteGMWarning": "Stai per eliminare un utente Game Master!",
+
 
 "VISION.ModeBlindness": "Cecità",
 "VISION.ModeBasicVision": "Visione Base",
@@ -2360,6 +3061,8 @@
 "WALLS.DoorSound.Industrial": "Industriale",
 "WALLS.DoorSound.IndustrialCreaky": "Industriale, Scricchiolante",
 "WALLS.DoorSound.Jail": "Cella",
+"WALLS.DoorSound.MagicDoor": "Porta Magica",
+"WALLS.DoorSound.MagicWall": "Muro Magico",
 "WALLS.DoorSound.Metal": "Metallo",
 "WALLS.DoorSound.SlidingMetal": "Scorrevole, Metallo",
 "WALLS.DoorSound.SlidingModern": "Scorrevole, Moderna",
