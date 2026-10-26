@@ -1,0 +1,28 @@
+name: Release module
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate and package
+        run: |
+          python3 -m json.tool it-IT/module.json >/dev/null
+          python3 -m json.tool it-IT/it.json >/dev/null
+          test "v$(python3 -c 'import json; print(json.load(open("it-IT/module.json"))["version"])')" = "$GITHUB_REF_NAME"
+          mkdir -p translation-core-it
+          cp it-IT/module.json it-IT/it.json translation-core-it/
+          zip -qr translation-core-it.zip translation-core-it
+          cp it-IT/module.json module.json
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" translation-core-it.zip module.json --generate-notes

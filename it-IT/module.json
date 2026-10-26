@@ -1,18 +1,20 @@
 {
   "id": "translation-core-it",
-  "title": "Core Italian Translation",
-  "description": "Add Italian language to FoundryVTT core.",
-  "version": "0.34",
+  "title": "Traduzione italiana core (fork v14)",
+  "description": "Traduzione italiana non ufficiale del core di Foundry VTT 14.",
+  "version": "0.35",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12.324",
-    "maximum": "12"
+    "minimum": "14.367",
+    "maximum": "14"
   },
   "coreTranslation": true,
 
   "authors": [{
     "name": "Simone",
     "discord": "Simone [UTC +1]#6710"
+  }, {
+    "name": "HackANurse",
+    "url": "https://github.com/HackANurse"
   }],
 
   "scripts": [],
@@ -21,17 +23,11 @@
     
   "languages": [{
   	"lang": "it",
-    "name": "Italian",
+    "name": "Italiano",
     "path": "it.json"
   }],
 
-  "media": [{
-    "type": "setup",
-    "url": "modules/translation-core-it/media/cover.webp",
-    "thumbnail": "modules/translation-core-it/media/cover.webp"
-  }],
-    
-  "url": "https://gitlab.com/riccisi/foundryvtt-lang-it-it",
-  "manifest": "https://gitlab.com/riccisi/foundryvtt-lang-it-it/raw/master/it-IT/module.json",
-  "download": "https://gitlab.com/riccisi/foundryvtt-lang-it-it/-/jobs/artifacts/0.34/raw/it-IT.zip?job=build"
+  "url": "https://github.com/HackANurse/foundryvtt-lang-it-it-v14",
+  "manifest": "https://github.com/HackANurse/foundryvtt-lang-it-it-v14/releases/latest/download/module.json",
+  "download": "https://github.com/HackANurse/foundryvtt-lang-it-it-v14/releases/download/v0.35/translation-core-it.zip"
 }
